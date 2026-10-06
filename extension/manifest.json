@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Auto Hide Claude Sidebar",
+  "version": "1.0.0",
+  "description": "Automatically hides the sidebar on claude.ai when the page loads. Ctrl+B still toggles it manually.",
+  "content_scripts": [
+    {
+      "matches": ["https://claude.ai/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
